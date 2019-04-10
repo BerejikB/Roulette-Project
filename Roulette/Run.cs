@@ -42,28 +42,26 @@ namespace Roulette
                         Console.Clear();
                         Console.WriteLine("Press enter to roll.");
                         int IndexBoi = RNG5.Next(0, 37);
-
-                        //Spinnyboi.CheckSpin(IndexBoi);
-
+                                             
                         int retVal = (int)Spinnyboi.ReturnValue(IndexBoi);
 
                         string retCol = Spinnyboi.ReturnColor(IndexBoi);
 
                         BetChecker.CheckStuff(retVal, retCol);
 
-                        Console.WriteLine($"Result is: {retVal}  ");
+                        Console.WriteLine($"Number is: {retVal}  ");
 
                        
                         break;
 
 
-                    case ConsoleKey.UpArrow:
-                        Spin Boi2 = new Spin();
-                        Random RNG6 = new Random(Boi2.RandoMaker());
-                        Console.WriteLine($" Seed result is: {Boi2.RandoMaker()} ");
-                        Boi2.CheckSpin(RNG6.Next(0, 37));
-                        Console.WriteLine($"Result is: {Boi2.spinResult}  ");
-                        break;
+                    //case ConsoleKey.UpArrow:
+                    //    Spin Boi2 = new Spin();
+                    //    Random RNG6 = new Random(Boi2.RandoMaker());
+                    //    Console.WriteLine($" Seed result is: {Boi2.RandoMaker()} ");
+                    //    Boi2.CheckSpin(RNG6.Next(0, 37));
+                    //    Console.WriteLine($"Result is: {Boi2.spinResult}  ");
+                    //    break;
                 }
 
                

@@ -20,7 +20,6 @@ namespace Roulette
             CheckRow(X);
 
         }
-
         public void CheckSplit(int X)
         {
             int topSplit;
@@ -56,7 +55,7 @@ namespace Roulette
             //Left split dissalow
             //3 6 9 13 15 18 21 24 27 30 33 
             splitRight = X + 1;
-            if (X== 0 || X == 3 || X == 6 || X == 9 || X == 13 || X == 15 || X == 18 || X == 21 || X == 24 || X == 27 || X == 30 || X == 33)
+            if ( X== 0 || X == 3 || X == 6 || X == 9 || X == 13 || X == 15 || X == 18 || X == 21 || X == 24 || X == 27 || X == 30 || X == 33)
             {
 
             }
@@ -68,7 +67,7 @@ namespace Roulette
             //Right split dissalow
             //4 7 10 13 16 19 22 25 28 31 34
             splitLeft = X - 1;
-            if (X == 0 || X == 4 || X == 7 || X == 10 || X == 13 || X == 16 || X == 19 || X == 22 || X == 25 || X == 28 || X == 31 || X == 34)
+            if ( X == 0 || X == 4 || X == 7 || X == 10 || X == 13 || X == 16 || X == 19 || X == 22 || X == 25 || X == 28 || X == 31 || X == 34)
 
             {
 
@@ -82,7 +81,7 @@ namespace Roulette
         }
         public void CheckCorner(int X)
         {
-            if (X== 0 || X== 37 || X == 2 || X == 5 || X == 8 || X == 11 || X == 14 || X == 17 || X == 20 || X == 23 || X == 26 || X == 29 || X == 32 || X == 35)
+            if ( X == 2 || X == 5 || X == 8 || X == 11 || X == 14 || X == 17 || X == 20 || X == 23 || X == 26 || X == 29 || X == 32 || X == 35)
             {
 
                 TopLeftCorner(X);
@@ -91,7 +90,7 @@ namespace Roulette
                 BottomRightCorner(X);
             }
             //Right Side
-            else if (X == 3 || X == 6 || X == 9 || X == 12 || X == 15 || X == 18 || X == 21 || X == 24 || X == 27 || X == 30 || X == 33 || X == 36)
+            else if ( X == 3 || X == 6 || X == 9 || X == 12 || X == 15 || X == 18 || X == 21 || X == 24 || X == 27 || X == 30 || X == 33 || X == 36)
             {
                 BottomLeftCorner(X);
                 TopLeftCorner(X);
@@ -99,7 +98,7 @@ namespace Roulette
             }
 
             //Left Side
-            else if(X == 1 || X == 4 || X == 7 || X == 10 || X == 13 || X == 16 || X == 19 || X == 22 || X == 25 || X == 28 || X == 31 || X == 34 )
+            else if( X == 1 || X == 4 || X == 7 || X == 10 || X == 13 || X == 16 || X == 19 || X == 22 || X == 25 || X == 28 || X == 31 || X == 34 )
             {
                 TopRightCorner(X);
                 BottomRightCorner(X);
@@ -160,7 +159,7 @@ namespace Roulette
             }
 
         }
-        
+     
         public void TopRightCorner(int X)
         {
             int up = X - 3;
@@ -269,6 +268,18 @@ namespace Roulette
 
                 Console.WriteLine("Winning Row 34, 35, 36");
             }
+
+
+        }
+
+        public void CheckDoubleRow(int X)
+        {
+
+
+
+
+
+
 
 
         }
